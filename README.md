@@ -22,7 +22,7 @@ Demo
 Mappings
 --------
 
-This plugin maps the `0` and `$` keys by default.
+This plugin maps the `0` and `$` keys by default in normal and visual mode.
 
 If this is undesired and the behaviour should be mapped to other keys, use
 the following `<Plug>`-mappings:
@@ -33,10 +33,15 @@ the following `<Plug>`-mappings:
 For example to bind this functionality to `^` and `g_` instead:
 
 ```vim
-unmap 0
+nunmap 0
 nmap ^ <Plug>(toggle-zero)zero
-unmap $
+xunmap 0
+xmap ^ <Plug>(toggle-zero)zero
+
+nunmap $
 nmap g_ <Plug>(toggle-zero)dollar
+xunmap $
+xmap g_ <Plug>(toggle-zero)dollar
 ```
 
 Credits

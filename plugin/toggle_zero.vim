@@ -20,12 +20,16 @@ set cpo&vim
 
   " Execute 0 or ^ depending on cursor position
   nnoremap <silent> <expr> <Plug>(toggle-zero)zero toggle_zero#toggle_zero()
-  map 0 <Plug>(toggle-zero)zero
+  nmap 0 <Plug>(toggle-zero)zero
+  xnoremap <silent> <expr> <Plug>(toggle-zero)zero toggle_zero#toggle_zero()
+  xmap 0 <Plug>(toggle-zero)zero
 
 
   " Execute $ or g_ depending on cursor position
   nnoremap <silent> <expr> <Plug>(toggle-zero)dollar toggle_zero#toggle_dollar()
-  map $ <Plug>(toggle-zero)dollar
+  nmap $ <Plug>(toggle-zero)dollar
+  xnoremap <silent> <expr> <Plug>(toggle-zero)dollar toggle_zero#toggle_dollar()
+  xmap $ <Plug>(toggle-zero)dollar
 
 " END Mappings }}}
 
