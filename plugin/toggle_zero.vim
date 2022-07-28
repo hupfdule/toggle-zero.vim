@@ -1,10 +1,11 @@
-" Vim plugin to toggle the funcationality of 0/^ and $/g_       {{{
+" Vim plugin to toggle the funcationality of 0/^ and $/g_
 " Maintainer:   Marco Herrn <marco@mherrn.de>
 " Last Changed: 30. May 2021
 " URL:          http://github.com/hupfdule/toggle_zero.vim/
 " Version:      1.0.0
 " License:      MIT
 
+" Boilerplate {{{2
 if exists("g:loaded_toggle_zero")
   finish
 endif
@@ -16,7 +17,7 @@ set cpo&vim
 " End boilerplate }}}
 
 
-" Mappings ============================================================= {{{
+" Mappings ============================================================= {{{1
 
   " Execute 0 or ^ depending on cursor position
   nnoremap <silent> <expr> <Plug>(toggle-zero)zero toggle_zero#toggle_zero()
@@ -34,7 +35,7 @@ set cpo&vim
 " END Mappings }}}
 
 
-" More boilerplate ===================================================== {{{
+" More boilerplate ===================================================== {{{2
 
 let &cpo = s:save_cpo
 let g:loaded_toggle_zero = 1
